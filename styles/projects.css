@@ -1,0 +1,28 @@
+.projects-head {
+    color: white;
+    padding-top: 3%;
+    padding-left: 3%;
+    text-decoration: underline;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.projects {
+    list-style: none;
+}
+.projects li h2 {
+    color: #FFA200;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.projects li p {
+    text-indent: 5vw;
+    color: white;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 5vh 10% 5vh 5%;
+    font-size: 3vw;
+
+}

@@ -1,0 +1,214 @@
+body
+{
+    margin: 0;
+    transition: background-color .5s;
+    background-color: #aaaaaa;
+}
+/*HEADER*/
+    [ui-view] {
+        margin-top: 78px;
+    }
+
+    .header * {
+        margin: 0;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .pages {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        padding: 0;
+        background: gray;
+        white-space: nowrap;
+        align-items: center;
+    }
+
+    .logo {
+        width: 64px;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .logo img {
+        height: 10vh;
+        width: 10vh;
+    }
+
+@media  (min-width: 700px) {
+
+
+    .hamburger {
+        display: none;
+    }
+    .hamburger-navigation {
+        display: none;
+    }
+
+    .tabs {
+        width: 100%;
+        height: 78px;
+    }
+
+
+    .tabs li:nth-child(1) {
+        margin-left: 0%;
+    }
+
+    .tabs ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 0 20px;
+        height: 78px;
+
+    }
+
+
+
+    .tabs li {
+        height: 100%;
+        width: 20%;
+        margin: 0;
+        line-height: 75px;
+    }
+
+    .tabs li:hover {
+        background: lightgray;
+    }
+
+    .pages li a {
+        font-size: 12pt;
+        color: orange;
+        font-family: "Lucida Console", Monaco, monospace;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        height: 100%;
+        cursor: default;
+    }
+
+    /*FOOTER*/
+    .footer {
+        position: fixed;
+        background-color: aqua;
+        width: 100%;
+        height: 64px;
+        bottom: 0;
+
+    }
+    .footer-information {
+        display: table;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-information li {
+        display: table-cell;
+        background-color: #FFA200;
+        height: 100%;
+    }
+    .email {
+        float: left;
+    }
+    .social-media {
+        display: table-cell;
+        float: right;
+        margin: 0;
+        width: 30%;
+        height: 100%;
+        background-color: blue;
+    }
+    .social-media li {
+        display: inline-block;
+        height: 5vh;
+    }
+    .social-media li img {
+
+    }
+}
+@media handheld, (max-width: 699px){
+
+
+
+    .tabs {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .hamburger {
+        margin-left: auto;
+        margin-right: 3%;
+        margin-bottom: 1%;
+        height: 48px;
+        width: 48px;
+    }
+
+    .hamburger-navigation {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #9C9C9C;
+        transition: 0.5s;
+
+    }
+    .hamburger-tabs {
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        width: 100%;
+        display: table;
+    }
+    .hamburger-navigation li {
+        list-style-type: none;
+        text-align: right;
+        margin: 0;
+        height: 20%;
+        display: table-row;
+    }
+
+    .hamburger-navigation li:hover {
+        background: lightgray;
+    }
+
+    .hamburger-navigation  li a {
+        font-size: 24pt;
+        color: #FFA200;
+        font-family: "Lucida Console", Monaco, monospace;
+        text-decoration: none;
+        cursor: default;
+        padding-right: 5%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .hidden-click {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+
+/*window resize in angular calls function to change background color*/
+
+
+
+

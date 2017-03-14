@@ -1,6 +1,73 @@
-<h1>Seth Campbell</h1>
-<p>Developer</p>
-<br>
-<p>Thank you for taking interest in my personal site!
-   Unfortunately, the main site is down right now.
-   Please check back later for updates.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="styles/index.css"/>
+    <link rel="stylesheet" href="styles/about.css"/>
+    <link rel="stylesheet" href="styles/projects.css"/>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routing.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/projects.js"></script>
+    <script src="scripts/controllers/work-history.js"></script>
+    <script src="scripts/controllers/resume.js"></script>
+</head>
+<body ng-app="app">
+    <header class="header">
+        <nav class="navigation">
+            <ul class="pages">
+                <li class="logo"><img src="visuals/logo.svg"/></li>
+                <li class="tabs">
+                    <ul>
+                        <li><a ui-sref="about">About</a></li>
+                        <li><a ui-sref="projects">Projects</a></li>
+                        <li><a ui-sref="work-history">Work History</a></li>
+                        <li><a ui-sref="resume">Résumé</a></li>
+                        <li><a ui-sref="contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="hamburger" onclick="openHamburger()"><img src="visuals/hamburger.png"/></li>
+            </ul>
+            <div class="hamburger-navigation" id="hamburger-navigation">
+                <ul class="hamburger-tabs">
+                    <li><a ui-sref="about" onclick="closeHamburger()">About</a></li>
+                    <li><a ui-sref="projects" onclick="closeHamburger()">Projects</a></li>
+                    <li><a ui-sref="work-history" onclick="closeHamburger()">Work History</a></li>
+                    <li><a ui-sref="resume" onclick="closeHamburger()">Résumé</a></li>
+                    <li><a ui-sref="contact" onclick="closeHamburger()">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hidden-click" id="hidden-click" onclick="closeHamburger()"></div>
+        </nav>
+    </header>
+    <div ui-view></div>
+    <!--<footer class="footer">-->
+        <!--<ul class="footer-information">-->
+            <!--<li class="email"><a>sethrcamp@gmail.com</a></li>-->
+            <!--<div class="social-media">-->
+                <!--<li><img src="visuals/github-logo.svg"/></li>-->
+                <!--<li><img src="visuals/linkedin-logo.svg"/></li>-->
+                <!--<li><img src="visuals/twitter-logo.svg"/></li>-->
+                <!--<li><img src="visuals/facebook-logo.svg"/></li>-->
+            <!--</div>-->
+        <!--</ul>-->
+    <!--</footer>-->
+    <script>
+        function openHamburger() {
+            document.getElementById("hamburger-navigation").style.width = "66.6%";
+            document.getElementById("hidden-click").style.width = "33.4%";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeHamburger() {
+            document.getElementById("hamburger-navigation").style.width = "0";
+            document.getElementById("hidden-click").style.width = "0";
+            document.body.style.backgroundColor = "#aaaaaa";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+.home {
+    display: block;
+    height: 80vh;
+}
+.profile-picture {
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+    display: block;
+}
+
+.name {
+    color: #FFA200;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 3vw;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+.developer {
+    color: white;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+    padding-top: 0.5%;
+    font-size: 2.5vw;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+.social-media-about {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 1vh 22vw;
+    width: 56vw;
+}
+.social-media-about li {
+    width: 25%;
+    margin: 0 3vw;
+}
+.social-media-about li img {
+    display: block;
+    margin: auto;
+    height: 5vw;
+
+}
+.email-about {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.about-head {
+    color: white;
+    margin-left: 3%;
+    text-decoration: underline;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.descriptions p {
+    color: white;
+    margin: 5vh 35% 5vh 5%;
+    font-size: 3vw;
+    text-indent: 4vw;
+}
+@media (min-width: 1100px) {
+    .profile-picture {
+        width: 263px;
+    }
+    .name {
+        font-size: 25pt;
+    }
+    .developer {
+        font-size: 21pt;
+    }
+    .social-media-about li img{
+        height: 55px;
+    }
+    .email-about {
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 699px) {
+    .profile-picture {
+        height: 40vw;
+    }
+    .name {
+        font-size: 6vw;
+    }
+    .developer {
+        font-size: 5vw;
+    }
+    .social-media-about li img{
+        height: 8vw;
+    }
+    .email-about {
+        font-size: 4vw;
+    }
+}
