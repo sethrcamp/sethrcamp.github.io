@@ -17,6 +17,7 @@
   "homepage": "https://github.com/sethrcamp/sethrcamp.github.io#readme",
   "dependencies": {
     "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
     "ui-router": "^1.0.0-alpha.3"
   }
 }
