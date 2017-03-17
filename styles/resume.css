@@ -1,0 +1,14 @@
+.resume-head {
+    color: white;
+    margin-left: 3%;
+    padding-top: 2%;
+    text-decoration: underline;
+    font-family: ronnia-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.resume {
+    margin: 2vh 10vw;
+    width: 80vw;
+    height: 73vh;
+}
